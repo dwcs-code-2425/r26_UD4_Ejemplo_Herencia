@@ -26,6 +26,7 @@ class Clinica {
         $conteo = [];
         foreach ($this->animales as $animal) {
             //get_class devuelve el nombre de la clase del objeto
+            //https://www.php.net/manual/es/function.get-class.php
             $tipo = get_class($animal);
             if (!isset($conteo[$tipo])) {
                 $conteo[$tipo] = 0;
