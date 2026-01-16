@@ -17,7 +17,7 @@ class Clinica {
     public function listarAnimales(): void {
         echo "<h3>Animales en {$this->nombre}</h3>";
         foreach ($this->animales as $animal) {
-            echo $animal->getNombre() . ": " . $animal->hablar() . "<br>";
+               echo $animal->verInformacion() . "<br>";
         }
     }
 
